@@ -1,6 +1,6 @@
 import { Categories } from "../data/dummy-data";
 import { FlatList } from "react-native";
-import { CategoryItems } from "../components/organism/CategoryItems";
+import { CategoryItems } from "../components/moleculs/CategoryItems";
 
 const CategoryScreen = () => {
   return (
