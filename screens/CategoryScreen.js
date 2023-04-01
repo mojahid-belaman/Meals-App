@@ -1,6 +1,6 @@
-import { Categories } from "../data/dummy-data";
 import { FlatList } from "react-native";
-import { CategoryItems } from "../components/moleculs/CategoryItems";
+import CategoryItems from "../components/CategoryItems";
+import { Categories } from "../data/dummy-data";
 
 const CategoryScreen = () => {
   return (
@@ -10,6 +10,7 @@ const CategoryScreen = () => {
       renderItem={({ item }) => (
         <CategoryItems title={item.title} color={item.color} />
       )}
+      numColumns={2}
     />
   );
 };
