@@ -1,9 +1,13 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
-function CategoryItems({ title, color }) {
+function CategoryItems({ title, color, onPress }) {
   return (
     <View style={[styles.container, { backgroundColor: color }]}>
-      <Pressable android_ripple={{ color: "#eee" }} style={styles.button}>
+      <Pressable
+        android_ripple={{ color: "#eee" }}
+        style={styles.button}
+        onPress={onPress}
+      >
         <View style={styles.item}>
           <Text style={styles.text}>{title}</Text>
         </View>
